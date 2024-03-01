@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('name');
             $table->text('description')->nullable();
             $table->string('image')->nullable();
+            // $table->decimal('price', 10, 2);
             $table->decimal('price', 10, 2);
             $table->integer('stock');
             $table->boolean('status')->default(1);
